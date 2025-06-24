@@ -9,3 +9,14 @@ export type TokenConfig = {
     startBlock: number;
   }[];
 };
+
+export type RewardsData = {
+  opId: number;
+  epoch: number;
+  rewardsAmount: string;
+};
+
+export type Epoch = {
+  epoch: number;
+  rewardsAmount: string;
+};

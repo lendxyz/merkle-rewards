@@ -1,4 +1,5 @@
 import { CHAINS_CONFIG, rewardsPerOpId } from "./constants";
+import { Epoch } from "./types";
 
 export function buildRewardMap() {
   const tokensByOpId: Record<
@@ -32,8 +33,9 @@ export function buildRewardMap() {
     }
   }
 
-  const rewardMap: Record<string, string> = {};
-  for (const { opId, rewardsAmount } of rewardsPerOpId) {
+  const rewardMap: Record<string, Epoch> = {};
+
+  for (const { opId, epoch, rewardsAmount } of rewardsPerOpId) {
     const tokens = tokensByOpId[opId];
     if (!tokens || tokens.length === 0) continue;
 
@@ -42,7 +44,7 @@ export function buildRewardMap() {
 
     for (const { chain, token } of tokens) {
       const key = `${chain.chainId}-${token.address.toLowerCase()}`;
-      rewardMap[key] = share.toString();
+      rewardMap[key] = { epoch, rewardsAmount: share.toString() };
     }
   }
 

@@ -2,8 +2,10 @@ import { ethers } from "ethers";
 import { MerkleTree } from "merkletreejs";
 import keccak256 from "keccak256";
 import path from "path";
-import * as fs from "fs/promises";
-import { TOKEN_EVENT_ABI } from "./constants";
+import * as fsPromises from "fs/promises";
+import fs from "fs";
+import { BLOCK_INTERVAL, TOKEN_EVENT_ABI } from "./constants";
+import { Epoch } from "./types";
 
 export async function processToken(
   provider: ethers.providers.JsonRpcProvider,
@@ -14,15 +16,36 @@ export async function processToken(
     startBlock: number;
     opId: number;
   },
-  rewardMap: Record<string, string>,
+  rewardMap: Record<string, Epoch>,
 ) {
+  const rewardKey = `${chainId}-${tokenMeta.address.toLowerCase()}`;
+  const safeName = `${tokenMeta.name}-${chainId}`.replace(/[^a-z0-9]/gi, "-");
+  const fileName = `claims-${safeName}.json`;
+  const filePath = path.join(
+    `proofs`,
+    `op-${tokenMeta.opId}`,
+    `epoch-${rewardMap[rewardKey].epoch}`,
+  );
+
+  const fullPath = path.join(filePath, fileName);
+
+  if (!fs.existsSync(filePath)) {
+    await fsPromises.mkdir(filePath, { recursive: true });
+  }
+
+  if (fs.existsSync(fullPath)) {
+    console.log(
+      `❌ [${tokenMeta.name}-${chainId}] Rewards proofs at epoch ${rewardMap[rewardKey].epoch} already distributed`,
+    );
+    return;
+  }
+
   const balances = new Map<string, bigint>();
-  const blockStep = 5000;
   const endBlockNumber = await provider.getBlockNumber();
 
   let fromBlock = tokenMeta.startBlock;
   while (fromBlock <= endBlockNumber) {
-    const toBlock = Math.min(fromBlock + blockStep, endBlockNumber);
+    const toBlock = Math.min(fromBlock + BLOCK_INTERVAL, endBlockNumber);
     console.log(
       `🔍 [${tokenMeta.name}] Scanning blocks ${fromBlock}–${toBlock}...`,
     );
@@ -55,16 +78,21 @@ export async function processToken(
   const nonZero = [...balances.entries()].filter(([_, v]) => v > 0n);
   const totalSupply = nonZero.reduce((acc, [_, v]) => acc + v, 0n);
 
-  const rewardKey = `${chainId}-${tokenMeta.address.toLowerCase()}`;
-  const totalRewards = BigInt(rewardMap[rewardKey]);
+  const totalRewards = BigInt(rewardMap[rewardKey].rewardsAmount);
 
   if (!totalRewards) {
     throw new Error(`❌ No rewards found for key ${rewardKey}`);
   }
 
-  console.log(`✅ [${tokenMeta.name}] Total holders: ${nonZero.length}`);
-  console.log(`🧮 [${tokenMeta.name}] Total token supply: ${totalSupply}`);
-  console.log(`🎁 Total rewards to distribute: ${totalRewards}`);
+  console.log(
+    `✅ [${tokenMeta.name}-${chainId}] Total holders: ${nonZero.length}`,
+  );
+  console.log(
+    `🧮 [${tokenMeta.name}-${chainId}] Total token supply: ${totalSupply}`,
+  );
+  console.log(
+    `🧮 [${tokenMeta.name}-${chainId}] Total rewards to distribute: ${totalRewards}`,
+  );
 
   const claims: Record<string, any> = {};
   const leaves: Buffer[] = [];
@@ -113,11 +141,8 @@ export async function processToken(
     claims,
   };
 
-  const safeName = `${tokenMeta.name}-${chainId}`.replace(/[^a-z0-9]/gi, "-");
-  const filename = `claims-${safeName}-${endBlockNumber}.json`;
-  await fs.writeFile(
-    path.join("proofs", filename),
-    JSON.stringify(output, null, 2),
+  await fsPromises.writeFile(fullPath, JSON.stringify(output, null, 2));
+  console.log(
+    `📁 [${tokenMeta.name}-${chainId}] Output written to ${fileName}`,
   );
-  console.log(`📁 [${tokenMeta.name}] Output written to ${filename}`);
 }

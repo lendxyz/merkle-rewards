@@ -1,4 +1,6 @@
-import { TokenConfig } from "./types";
+import { RewardsData, TokenConfig } from "./types";
+
+export const BLOCK_INTERVAL = 25000;
 
 export const TOKEN_EVENT_ABI = [
   "event Transfer(address indexed from, address indexed to, uint256 value)",
@@ -40,7 +42,7 @@ export const CHAINS_CONFIG: TokenConfig[] = [
 ];
 
 // TODO: move this to a json data file
-export const rewardsPerOpId = [
-  { opId: 1, rewardsAmount: "108232394698" },
-  { opId: 2, rewardsAmount: "8232394698" },
+export const rewardsPerOpId: RewardsData[] = [
+  { opId: 1, epoch: 1, rewardsAmount: "108232394698" },
+  { opId: 2, epoch: 1, rewardsAmount: "8232394698" },
 ];
