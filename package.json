@@ -1,4 +1,21 @@
 {
   "name": "lend-merkle-rewards",
-  "packageManager": "yarn@4.6.0"
+  "author": "lend.xyz",
+  "license": "MIT",
+  "type": "module",
+  "main": "main.ts",
+  "scripts": {
+    "start": "npx tsx main.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ethers": "^5.7.2",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.3",
+    "tsx": "^4.20.3",
+    "typescript": "^5.4.5"
+  }
 }
