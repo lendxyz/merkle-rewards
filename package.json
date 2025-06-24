@@ -5,7 +5,7 @@
   "type": "module",
   "main": "main.ts",
   "scripts": {
-    "start": "npx tsx main.ts"
+    "start": "npx tsx src/main.ts"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
