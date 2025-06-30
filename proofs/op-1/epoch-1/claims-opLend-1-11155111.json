@@ -4,21 +4,19 @@
   "token": "0x6F60861d855966b1BCC68Ab56B187Ab98271D409",
   "name": "opLend-1",
   "totalRewards": "108232394698",
-  "blockHeight": 8618828,
-  "merkleRoot": "0xebf4486e0d61ab3157f2d0bb22123fe2965704069bc4496b54fad62e3ce6e7dd",
+  "blockHeight": 8661441,
+  "merkleRoot": "0xa5a4433d1314c07de66b42825c90dfc7d26a8f8f3838ec0f3e63f7f811aecea9",
   "claims": {
     "0x5ea84ad53887cfc467d27e14b6f9eeb5a1c8a283": {
-      "index": 0,
       "amount": "108231321474",
       "proof": [
-        "0x66ba24d8f737a2ffed715f8c1a8644b96fd86c7c3616c512bd63d5369a4338b6"
+        "0x083081aac0cd84c9b247dfef8e41c0d07d9a3a6cf8f92f0e9af4c0780e0dfd86"
       ]
     },
     "0x10b364c3d1682858faa5a864a317d1941c8b068d": {
-      "index": 1,
       "amount": "1073223",
       "proof": [
-        "0x513cfaf2b674a99f4cf4abd1da8f396d692be422a971cd9c8f45d43d52ffb1af"
+        "0x3e0782704e0c5f5bb9bf8aa9af7fdc58081fbc7e1aa728b17437622ad8e5496d"
       ]
     }
   }

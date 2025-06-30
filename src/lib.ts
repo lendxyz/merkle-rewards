@@ -97,24 +97,21 @@ export async function processToken(
   const claims: Record<string, any> = {};
   const leaves: Buffer[] = [];
 
-  let index = 0;
   for (const [address, balance] of nonZero) {
     const rewardAmount = (balance * totalRewards) / totalSupply;
 
     const leaf = keccak256(
       ethers.utils.solidityPack(
-        ["uint256", "address", "uint256"],
-        [index, address, rewardAmount.toString()],
+        ["address", "uint256"],
+        [address, rewardAmount.toString()],
       ),
     );
     leaves.push(leaf);
 
     claims[address] = {
-      index,
       amount: rewardAmount.toString(),
       proof: [],
     };
-    index++;
   }
 
   const tree = new MerkleTree(leaves, keccak256, { sortPairs: true });
@@ -123,8 +120,8 @@ export async function processToken(
   Object.entries(claims).forEach(([address, claim]) => {
     const leaf = keccak256(
       ethers.utils.solidityPack(
-        ["uint256", "address", "uint256"],
-        [claim.index, address, claim.amount],
+        ["address", "uint256"],
+        [address, claim.amount],
       ),
     );
     claim.proof = tree.getHexProof(leaf);
