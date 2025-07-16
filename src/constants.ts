@@ -124,23 +124,15 @@ export const CHAINS_CONFIG: TokenConfig[] = [
       },
     ],
   },
-  {
-    chainId: 10143,
-    name: "Monad Testnet",
-    rpcUrl: "https://testnet-rpc.monad.xyz",
-    tokenAddresses: [
-      {
-        opId: 2,
-        address: "0x54585517BBA619F74107581D0aF828EA40C25A7F",
-        name: "opLend-2",
-        startBlock: 23267910,
-      },
-    ],
-  },
 ];
 
 // TODO: move this to a json data file
 export const rewardsPerOpId: RewardsData[] = [
-  { opId: 1, epoch: 1, rewardsAmount: "108232394698" },
-  { opId: 2, epoch: 1, rewardsAmount: "8232394698" },
+  { opId: 1, epoch: 1, rewardsAmount: "4606474230" },
+  { opId: 2, epoch: 1, rewardsAmount: "11474801076" },
+  { opId: 3, epoch: 1, rewardsAmount: "14428038615" },
+  { opId: 4, epoch: 1, rewardsAmount: "544959923" },
+  { opId: 5, epoch: 1, rewardsAmount: "123062671153" },
+  { opId: 6, epoch: 1, rewardsAmount: "550765105961" },
+  { opId: 8, epoch: 1, rewardsAmount: "4531701538" },
 ];
