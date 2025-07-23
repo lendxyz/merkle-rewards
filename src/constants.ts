@@ -128,11 +128,11 @@ export const CHAINS_CONFIG: TokenConfig[] = [
 
 // TODO: move this to a json data file
 export const rewardsPerOpId: RewardsData[] = [
-  { opId: 1, epoch: 1, rewardsAmount: "4606474230" },
-  { opId: 2, epoch: 1, rewardsAmount: "11474801076" },
-  { opId: 3, epoch: 1, rewardsAmount: "14428038615" },
-  { opId: 4, epoch: 1, rewardsAmount: "544959923" },
-  { opId: 5, epoch: 1, rewardsAmount: "123062671153" },
-  { opId: 6, epoch: 1, rewardsAmount: "550765105961" },
-  { opId: 8, epoch: 1, rewardsAmount: "4531701538" },
+  { opId: 1, epoch: 2, rewardsAmount: "4606474230" },
+  { opId: 2, epoch: 2, rewardsAmount: "11474801076" },
+  { opId: 3, epoch: 2, rewardsAmount: "14428038615" },
+  { opId: 4, epoch: 2, rewardsAmount: "544959923" },
+  { opId: 5, epoch: 2, rewardsAmount: "123062671153" },
+  { opId: 6, epoch: 2, rewardsAmount: "550765105961" },
+  { opId: 8, epoch: 2, rewardsAmount: "4531701538" },
 ];
