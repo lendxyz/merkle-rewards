@@ -138,8 +138,14 @@ export async function processToken(
     claims,
   };
 
-  await fsPromises.writeFile(fullPath, JSON.stringify(output, null, 2));
-  console.log(
-    `📁 [${tokenMeta.name}-${chainId}] Output written to ${fileName}`,
-  );
+  if (nonZero.length > 0) {
+    await fsPromises.writeFile(fullPath, JSON.stringify(output, null, 2));
+    console.log(
+      `📁 [${tokenMeta.name}-${chainId}] Output written to ${fileName}`,
+    );
+  } else {
+    console.log(
+      `❌ [${tokenMeta.name}-${chainId}] No holders found on this chain for this op`,
+    );
+  }
 }
