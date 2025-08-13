@@ -1,0 +1,57 @@
+{
+  "opId": 1,
+  "chainId": 84532,
+  "token": "0x490a75f4758a7d93f66e46779733d9Ec6517a2E7",
+  "name": "opLend-1",
+  "totalRewards": "166086096",
+  "blockHeight": 29661636,
+  "merkleRoot": "0x5a79d7b28760686f5147e91e35b360f4060dce2a1d2d049712dd834b076040f8",
+  "claims": {
+    "0xf47027f3edcb1f0b6861a25e6f3738e398440e11": {
+      "amount": "136557",
+      "proof": [
+        "0x99ee64144388f67434234da1f1cd9a702abe99ac1ff13e106016b3b4f32af0f8",
+        "0x022f7caebaee1b405a5fd82d7c04d2ffc3cb39aad1cf644838395c6ee962dd30",
+        "0x6d9d57415bde262ad083eee3505829bfc014c3b23990a3279b02729010faa66d"
+      ]
+    },
+    "0x027c1ebb9bee71b1149370d1746054bce1594c1b": {
+      "amount": "13655721",
+      "proof": [
+        "0xacb6b397527d6756b2352106bd4d2f7daf9518e2f751e0b593283b255dfadad2",
+        "0x022f7caebaee1b405a5fd82d7c04d2ffc3cb39aad1cf644838395c6ee962dd30",
+        "0x6d9d57415bde262ad083eee3505829bfc014c3b23990a3279b02729010faa66d"
+      ]
+    },
+    "0x8c7ecaca2591636c9fcf2b3649a15b08fa1f695f": {
+      "amount": "34146596",
+      "proof": [
+        "0x1c16ec40cabebc1c9d69c9e727e7c5f3af38da6d9eb1c46497a199c0121e6766",
+        "0x58eefd0afbe59134e664a0186749d17d2047a98ae52c4f49a89f484a78a4fb86",
+        "0x6d9d57415bde262ad083eee3505829bfc014c3b23990a3279b02729010faa66d"
+      ]
+    },
+    "0xb6c8cb62078ade8586c026c95c4db8c8c1dab5c5": {
+      "amount": "34146596",
+      "proof": [
+        "0x39f864374b6cdcf11400cb797391e7f564be92f0cb9509674c400b3c414020a0",
+        "0x58eefd0afbe59134e664a0186749d17d2047a98ae52c4f49a89f484a78a4fb86",
+        "0x6d9d57415bde262ad083eee3505829bfc014c3b23990a3279b02729010faa66d"
+      ]
+    },
+    "0x345c863f7d135946092da7cdad5fdef1b152f249": {
+      "amount": "13658638",
+      "proof": [
+        "0xf51e05fa1bb48ecf281bc570fe2a9ed1151a0e53ba20ccfa4776503da33cd5f0",
+        "0xda577a7acb950801b960877e5dd317b706f43bc736fe350e5aae9a7451c9ff1f"
+      ]
+    },
+    "0x9017cd149ee83a8f61e9097f65db39e524ed58cc": {
+      "amount": "70341988",
+      "proof": [
+        "0x6aeb9b4d25d4c311e851d8389ed1fa660398a7444d48370c730d13a4fe4cdfa6",
+        "0xda577a7acb950801b960877e5dd317b706f43bc736fe350e5aae9a7451c9ff1f"
+      ]
+    }
+  }
+}
