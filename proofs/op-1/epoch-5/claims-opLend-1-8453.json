@@ -1,0 +1,75 @@
+{
+  "opId": 1,
+  "token": "0xffE1278BA1a6770c8513f296FfD0541EdC5f38C2",
+  "name": "opLend-1",
+  "blockHeight": 44172242,
+  "chainId": 8453,
+  "totalRewards": "256352",
+  "merkleRoot": "0x13a84dc39b6b8dc3ee2853f5132010c9a52fde68328482e3110dac3e9b361470",
+  "claims": {
+    "0x5ea84ad53887cfc467d27e14b6f9eeb5a1c8a283": {
+      "amount": "16726",
+      "proof": [
+        "0xca1865a3a8c4c117a0ca71a3911c1365ba10ef3ee62dd939b2fbb2c3f578a579",
+        "0x312f798c581e4733620f3521b44f9a31c59790949e7fbdbf620ce8ccf5b0a26e",
+        "0x0ec2317f959d09269b22ea275e0a1788fd46467c0b1137218f9a24dd2d624753"
+      ]
+    },
+    "0xd15b0342ded129c3bae109f4731ff0ae614592e3": {
+      "amount": "34453",
+      "proof": [
+        "0x76f573ac7886d3ec7f46cabac9320c448e43886fc2156b509849e4d95dc760b5",
+        "0x312f798c581e4733620f3521b44f9a31c59790949e7fbdbf620ce8ccf5b0a26e",
+        "0x0ec2317f959d09269b22ea275e0a1788fd46467c0b1137218f9a24dd2d624753"
+      ]
+    },
+    "0xd5d60533ea912e6164c9548aec065a79845c3ac7": {
+      "amount": "18455",
+      "proof": [
+        "0xc7dba64ccf23ec1d21257087fbbeb00ff9ae843c4acf4c1df313babf1a5a6e55",
+        "0x033e6c9809fcec1f83d1cddc9bc8a97e40db087fb6fbed547ded7662bc6b5cf8",
+        "0x0ec2317f959d09269b22ea275e0a1788fd46467c0b1137218f9a24dd2d624753"
+      ]
+    },
+    "0x002153708f11f2651215059eea30820ee4d49ff3": {
+      "amount": "117265",
+      "proof": [
+        "0xb04f503528c4a9c3e9560e59bf1de9d6dbf8d3b7c31741be0ad990297e923194",
+        "0x033e6c9809fcec1f83d1cddc9bc8a97e40db087fb6fbed547ded7662bc6b5cf8",
+        "0x0ec2317f959d09269b22ea275e0a1788fd46467c0b1137218f9a24dd2d624753"
+      ]
+    },
+    "0xb61ff1652aef0fbf0ae1d06b516a8fbb18218613": {
+      "amount": "18414",
+      "proof": [
+        "0x5cf0d6e2d674fd2039648d525e8f6f960f769999dd3009507bd92af06fca721f",
+        "0x2c0180692d2b829376e38c0d266b8a77c8806501cc4064cbcedc222a5049239d",
+        "0x43e6376b19042f8ddffa1c43483bf73a4ef88d2d62358016a9bfd4892d12c39a"
+      ]
+    },
+    "0x77059a202bffa20847f924bac7c94fb386247147": {
+      "amount": "17462",
+      "proof": [
+        "0x61d6991c92581d155e8ed172330e04db1df9a76e81f9337337bd521014ecfaad",
+        "0x2c0180692d2b829376e38c0d266b8a77c8806501cc4064cbcedc222a5049239d",
+        "0x43e6376b19042f8ddffa1c43483bf73a4ef88d2d62358016a9bfd4892d12c39a"
+      ]
+    },
+    "0x1e6eca15de096cb80d256a252c855fd74c9279a2": {
+      "amount": "16646",
+      "proof": [
+        "0x458eafd755ec803b4f23f23f3b4b3e118a9ca08afe7feca29c60f60fa97f952e",
+        "0xa62dffe268dae84b85b85f3bb377b85a80c9326fe38c266dbab84e8c99bfca93",
+        "0x43e6376b19042f8ddffa1c43483bf73a4ef88d2d62358016a9bfd4892d12c39a"
+      ]
+    },
+    "0xc3ba7c7b3171473d931e353eb034f72943167cb1": {
+      "amount": "16928",
+      "proof": [
+        "0x60203aa6dc610f876948600b1db069b1aed7b0fb5762a3c738ea896d1d88788c",
+        "0xa62dffe268dae84b85b85f3bb377b85a80c9326fe38c266dbab84e8c99bfca93",
+        "0x43e6376b19042f8ddffa1c43483bf73a4ef88d2d62358016a9bfd4892d12c39a"
+      ]
+    }
+  }
+}
