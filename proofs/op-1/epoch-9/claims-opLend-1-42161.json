@@ -1,0 +1,49 @@
+{
+  "opId": 1,
+  "token": "0x678B42A61223bAe39b531B3f61d54b7Ecbd4Ab45",
+  "name": "opLend-1",
+  "blockHeight": 457590873,
+  "chainId": 42161,
+  "totalRewards": "514854",
+  "merkleRoot": "0x4240afc1ab11296336e8e0f9b6f93a20aedef5101a696612edcbf2465593fbc0",
+  "claims": {
+    "0x5ea84ad53887cfc467d27e14b6f9eeb5a1c8a283": {
+      "amount": "17064",
+      "proof": [
+        "0xcb728cf431d09ef45c458893d64fe0c1343d0a4b9d678057d1045c6686c7f85e",
+        "0x49f1d36381de0307db71ec0f3a6e3a5382e2e5f0015039053f11f35e537fd559",
+        "0xa9ceeb91f32b8c654396e9464eb719bbacde105043686d835f047aeb90c2a66f"
+      ]
+    },
+    "0x014254d29e6a3160831f59eea9a1bd8621b23518": {
+      "amount": "84926",
+      "proof": [
+        "0xff0c9434b91a4102b95261ae9d1f7a6a750b565894e1e3783b0d0914e5c9c9cc",
+        "0x49f1d36381de0307db71ec0f3a6e3a5382e2e5f0015039053f11f35e537fd559",
+        "0xa9ceeb91f32b8c654396e9464eb719bbacde105043686d835f047aeb90c2a66f"
+      ]
+    },
+    "0xdf29ee8f6d1b407808eb0270f5b128dc28303684": {
+      "amount": "243012",
+      "proof": [
+        "0x94a10e90d799b14afd61c0db6b06ce1882b62f6c6c128a1ab3f2cfd9778d4f8b",
+        "0x631249b7df49f2a7853c4bd0ba138eb1f0e82c16f235a61db762c6f682a00c38",
+        "0xa9ceeb91f32b8c654396e9464eb719bbacde105043686d835f047aeb90c2a66f"
+      ]
+    },
+    "0xd333bc5c9670c9ceb18f9a2cf02c6e86807a8227": {
+      "amount": "84926",
+      "proof": [
+        "0x1aaeead699b70448332326f227e0168579aedb11ffb50a7d8bde877e53fdae76",
+        "0x631249b7df49f2a7853c4bd0ba138eb1f0e82c16f235a61db762c6f682a00c38",
+        "0xa9ceeb91f32b8c654396e9464eb719bbacde105043686d835f047aeb90c2a66f"
+      ]
+    },
+    "0x69f66bd6628ff27222da37245ed686c3ef4766c9": {
+      "amount": "84926",
+      "proof": [
+        "0x29bbfc22b326213103d461abf7996404238d4513afb44090f014dab9d5af8786"
+      ]
+    }
+  }
+}
