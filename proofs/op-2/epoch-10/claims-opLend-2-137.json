@@ -1,0 +1,15 @@
+{
+  "opId": 2,
+  "token": "0x1D46f61a04eB3fEc5A9B9A8afaB01fF52e6dDbB6",
+  "name": "opLend-2",
+  "blockHeight": 89873403,
+  "chainId": 137,
+  "totalRewards": "17399470",
+  "merkleRoot": "0xf6608c4653a834271616ec771500532bde36116c07d9b1e205cd440b70ab9ecd",
+  "claims": {
+    "0x8a8768D3B40C3c9171Fb4588d4ae0C6cE1e0A493": {
+      "amount": "17399470",
+      "proof": []
+    }
+  }
+}
