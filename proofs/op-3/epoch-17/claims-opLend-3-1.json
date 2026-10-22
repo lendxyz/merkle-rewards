@@ -1,0 +1,57 @@
+{
+  "opId": 3,
+  "token": "0x030d3b11D0264cA487587A6f798057eE0832b420",
+  "name": "opLend-3",
+  "blockHeight": 26248633,
+  "chainId": 1,
+  "totalRewards": "1043921883",
+  "merkleRoot": "0xd36fb416a3eabb624121970480dd084f9e439d936ffe117b0eeccf3d1ca0e420",
+  "claims": {
+    "0xCbcF88326c66355F47C03030D1bef6DcA2ba84b1": {
+      "amount": "23461",
+      "proof": [
+        "0x18bdabfcf060ea3e7d53f46cae2039bc9260ffec0032d91d0e3e3dc09fbbd605",
+        "0x6bbe7c8ea7fc7343ee53cdd5137cc438670a6ee2f699f77a841077d5614941fc",
+        "0xa90985dd329ab3782e10e7f30af239e61f67c0975461f31feb21331346c2b19e"
+      ]
+    },
+    "0x5Ea84Ad53887CFc467D27e14B6F9EEb5a1C8a283": {
+      "amount": "213282",
+      "proof": [
+        "0xcf4780ca7857e635d8eb899565189bbc608458967e8d4bbdbf878d8aaf62c7cf",
+        "0x6bbe7c8ea7fc7343ee53cdd5137cc438670a6ee2f699f77a841077d5614941fc",
+        "0xa90985dd329ab3782e10e7f30af239e61f67c0975461f31feb21331346c2b19e"
+      ]
+    },
+    "0x0aEADbC3D64d638B949f3e6669ab7Ca7F6235721": {
+      "amount": "14609",
+      "proof": [
+        "0x4326b3ec5c7824686750bc64afa0e3efcc8b80d3ba5153aef465b17a503b8631",
+        "0x0074bcf21053e41f770aebd924aac7e64372a557f02a351c9d16c0bbf87100fd",
+        "0xa90985dd329ab3782e10e7f30af239e61f67c0975461f31feb21331346c2b19e"
+      ]
+    },
+    "0x7De865445430E07ABf6De592857657B39a45E229": {
+      "amount": "226120",
+      "proof": [
+        "0xd1be1888ed750d99ea3b93ab2bbdd72c14b9249c8192a0ccdab03a1d76355a6d",
+        "0x0074bcf21053e41f770aebd924aac7e64372a557f02a351c9d16c0bbf87100fd",
+        "0xa90985dd329ab3782e10e7f30af239e61f67c0975461f31feb21331346c2b19e"
+      ]
+    },
+    "0xAa4A3e407dB83491F47Bbc07856341D9FDdcF41d": {
+      "amount": "394",
+      "proof": [
+        "0x190ce66c394cb39760bb1886d3eaeb81504fadfd5bf8ea37a9857eb2726e03f5",
+        "0xf906f5590784f5d99354e216d7254de613d9c467b703eec991391bd3c95bfc0a"
+      ]
+    },
+    "0x9A6Aba466BDbC13822B51eE004499348480D23cb": {
+      "amount": "1043444017",
+      "proof": [
+        "0x8cd77c3dc11c875017ca31af5eec9a9552c14b893bd3d725066b9bbde3334e56",
+        "0xf906f5590784f5d99354e216d7254de613d9c467b703eec991391bd3c95bfc0a"
+      ]
+    }
+  }
+}
