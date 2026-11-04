@@ -1,0 +1,58 @@
+{
+  "opId": 3,
+  "token": "0x030d3b11D0264cA487587A6f798057eE0832b420",
+  "name": "opLend-3",
+  "blockHeight": 26342405,
+  "chainId": 1,
+  "totalRewards": "910231458",
+  "decimals": 6,
+  "merkleRoot": "0x920722616ab7d050ee59f0401a4a775d8a9f0967cd96e9b21868c0042df118e9",
+  "claims": {
+    "0xCbcF88326c66355F47C03030D1bef6DcA2ba84b1": {
+      "amount": "20456",
+      "proof": [
+        "0x06d0de7c5ce816b96952e542759a8e6c456c0ba3a9291a4927abf9f634fc6656",
+        "0xe55cddbdcb696575db6c9a043cd2a7db9921aa95a3d5dbe80efb49047005431b",
+        "0x35bfa870c1268d002fc72e59ebf4229acc2af07205031165147193cc97c29ff1"
+      ]
+    },
+    "0x5Ea84Ad53887CFc467D27e14B6F9EEb5a1C8a283": {
+      "amount": "185968",
+      "proof": [
+        "0x7ec543ad91d99abb28cbf42604f9c9a96a63a1201328093232f1c61e8f629fee",
+        "0xe55cddbdcb696575db6c9a043cd2a7db9921aa95a3d5dbe80efb49047005431b",
+        "0x35bfa870c1268d002fc72e59ebf4229acc2af07205031165147193cc97c29ff1"
+      ]
+    },
+    "0x0aEADbC3D64d638B949f3e6669ab7Ca7F6235721": {
+      "amount": "12738",
+      "proof": [
+        "0x9fa95c285530f2544a243c39640cf57b24bf8c57d3a5f2668b1519f07d80ad86",
+        "0xea31d94cd24c80bcb79cce1846b4ee1a50dde0417ba841cb3667499c3e6e1a7a",
+        "0x35bfa870c1268d002fc72e59ebf4229acc2af07205031165147193cc97c29ff1"
+      ]
+    },
+    "0x7De865445430E07ABf6De592857657B39a45E229": {
+      "amount": "197162",
+      "proof": [
+        "0xe837e138999799896e77578360dd0e66e3ca0772c4bc4c45f361d79f64710637",
+        "0xea31d94cd24c80bcb79cce1846b4ee1a50dde0417ba841cb3667499c3e6e1a7a",
+        "0x35bfa870c1268d002fc72e59ebf4229acc2af07205031165147193cc97c29ff1"
+      ]
+    },
+    "0xAa4A3e407dB83491F47Bbc07856341D9FDdcF41d": {
+      "amount": "344",
+      "proof": [
+        "0x98a3f5ebbc1d638bea6077ff926bbeadaa6178c124f10c860c843dcc3f773862",
+        "0x07bb4b7b1aede3036785d352223ebfd8f3eaf2979b3837548b4d2ba6cda0f254"
+      ]
+    },
+    "0x9A6Aba466BDbC13822B51eE004499348480D23cb": {
+      "amount": "909814790",
+      "proof": [
+        "0x52e0347604441de0d6736c00ac947aff6352926356a5fc1338d0a0a719a5cd14",
+        "0x07bb4b7b1aede3036785d352223ebfd8f3eaf2979b3837548b4d2ba6cda0f254"
+      ]
+    }
+  }
+}
