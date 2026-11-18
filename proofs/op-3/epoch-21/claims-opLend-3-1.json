@@ -1,0 +1,58 @@
+{
+  "opId": 3,
+  "token": "0x030d3b11D0264cA487587A6f798057eE0832b420",
+  "name": "opLend-3",
+  "blockHeight": 26441277,
+  "chainId": 1,
+  "totalRewards": "766648043",
+  "decimals": 6,
+  "merkleRoot": "0x0b94f007492a808977d61f0fb1690e09dd6d51f64eb7c552058578901f37e275",
+  "claims": {
+    "0xCbcF88326c66355F47C03030D1bef6DcA2ba84b1": {
+      "amount": "17229",
+      "proof": [
+        "0xd831b1e7756b6747544949348d96240cd00c81c98c1210f7cc89052f36bdc22e",
+        "0x806c90ac62e2298e691802d9e7153c85dfe04e7ceb5339d5edad853831d4634c",
+        "0xae8204c2a0899a87677a09b000419901d769b538e675261d3bde803353f1a1a3"
+      ]
+    },
+    "0x5Ea84Ad53887CFc467D27e14B6F9EEb5a1C8a283": {
+      "amount": "156632",
+      "proof": [
+        "0xcc2112bf319a5691fffb2ef3955e9d878070ac4388314cdf5901812835080383",
+        "0x806c90ac62e2298e691802d9e7153c85dfe04e7ceb5339d5edad853831d4634c",
+        "0xae8204c2a0899a87677a09b000419901d769b538e675261d3bde803353f1a1a3"
+      ]
+    },
+    "0x9A6Aba466BDbC13822B51eE004499348480D23cb": {
+      "amount": "766297102",
+      "proof": [
+        "0x88d6963533728ee47d7a6057dbe735796d4701c663be381693e514fbada3ea25",
+        "0x4163eb83097a87e5f7f68a125f2ee61e64a85771b2cacfdd7e7599f7f2c3e5a5",
+        "0xae8204c2a0899a87677a09b000419901d769b538e675261d3bde803353f1a1a3"
+      ]
+    },
+    "0x0aEADbC3D64d638B949f3e6669ab7Ca7F6235721": {
+      "amount": "10729",
+      "proof": [
+        "0x09d61f5f9c29ec662271a44a2efa30d140deb4b9a81dc7568a3528574583043f",
+        "0x4163eb83097a87e5f7f68a125f2ee61e64a85771b2cacfdd7e7599f7f2c3e5a5",
+        "0xae8204c2a0899a87677a09b000419901d769b538e675261d3bde803353f1a1a3"
+      ]
+    },
+    "0x7De865445430E07ABf6De592857657B39a45E229": {
+      "amount": "166061",
+      "proof": [
+        "0x1e424d5f2742b730a74ff455d5114e1cfb5632e8f0312ca60562fdccf6c24d0f",
+        "0x5b6adadcaefdf79f0f951ba76217f73e34eea300bde3c5a77f197188e424ee4b"
+      ]
+    },
+    "0xAa4A3e407dB83491F47Bbc07856341D9FDdcF41d": {
+      "amount": "290",
+      "proof": [
+        "0x2e42199192cb167394a90e0c4094b622d87055e1486bcf835e50f33df8613368",
+        "0x5b6adadcaefdf79f0f951ba76217f73e34eea300bde3c5a77f197188e424ee4b"
+      ]
+    }
+  }
+}
